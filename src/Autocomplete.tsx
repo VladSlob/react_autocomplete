@@ -57,10 +57,7 @@ export const Autocomplete: React.FC<AutocompleteProps> = ({
             value={inputValue}
             onChange={e => {
               setInputValue(e.target.value);
-              onInputChange?.(e.target.value);
-            }}
-            onFocus={() => setIsOpen(true)}
-            onBlur={() => setIsOpen(false)}
+
           />
         </div>
 
